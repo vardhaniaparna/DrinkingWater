@@ -1,0 +1,52 @@
+#heading
+{
+    height:50px;
+	font-size:40px;
+	text-align:center;
+	font-family:Comic Sans MS;
+	color:GrayText;
+}
+#csize
+{
+height:50px;
+ font-family:Lucida Calligraphy;
+color:Red;
+font-style: bold-italic;	
+font-size:30px;
+}
+#App
+{
+	height:600px;
+	color:Green;
+	font-family:Lucida Calligraphy;
+	font-size:30px;
+	font-style:underline;
+}
+#Goal
+{
+	height:100px;
+}
+#Notify{
+	height:50px;
+}
+body {
+   background-color: lightblue;
+	
+}
+li
+{ 
+ display:inline;
+  font-family:Lucida Calligraphy;
+  color: brown;
+  font-size:20px;
+}
+img
+{
+	height:50px;
+	width:100px;
+	position:relative;
+}
+para{
+	font-size:10px;
+}
+

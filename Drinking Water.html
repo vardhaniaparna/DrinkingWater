@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drinking Water Application</title>
+<link rel="stylesheet" type="text/css" href="DrinkingWater.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> <!--Angular JS embedded-->
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<div id="heading">Drinking Water App</div>
+<marquee><bold><ol><li id="list">1.Drink Water to stay more healthy&nbsp;&nbsp;</li><li>2.Stay Hydrated Always&nbsp;&nbsp;</li><li>3.Drinking Water Helps Maintain the Balance of Body Fluids&nbsp;&nbsp;</li><li>4.Water Helps Keep Skin Looking Good&nbsp;&nbsp;</li><li>5.Water Helps Your Kidneys</li></ol></bold></marquee>
+<div id="csize">Please select the Cup Size<br>
+<center><img ng-repeat="image in appu" ng-src="{{image.icon}}" height="50" width="50" hspace="20"/></center><br>
+</div>
+<br><br><br>
+<div id="App">Please select your weight
+<select ng-model="selectedWeight" ng-option="x.wt for x in weight">
+</select>
+<p> ANG:Your Weight is {{selectedWeight}}</p>
+		
+ <script src="D:\Aparna\MainController.js"></script>
+
+</div>
+<div id="Goal">Application</div>
+<div id="Notify">Notify</div>
+
+
+</script>
+
+</form>
+</body>
+</html>
