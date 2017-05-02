@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drinking Water Application</title>
+<link rel="stylesheet" type="text/css" href="DrinkingWater.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> <!--Angular JS embedded-->
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<div id="heading">Drinking Water App</div>
+<marquee><bold><ol><li id="list">1.Drink Water to stay more healthy&nbsp;&nbsp;</li><li>2.Stay Hydrated Always&nbsp;&nbsp;</li><li>3.Drinking Water Helps Maintain the Balance of Body Fluids&nbsp;&nbsp;</li><li>4.Water Helps Keep Skin Looking Good&nbsp;&nbsp;</li><li>5.Water Helps Your Kidneys</li></ol></bold></marquee>
+<div id="csize">Please select the Cup Size<br>
+<center><img ng-repeat="image in appu" ng-src="{{image.icon}}" height="50" width="50" hspace="20"/></center><br>
+</div>
+<br><br><br>
+<div id="App">Please select your appropriate weight:
+<select ng-model="selectedWeight" ng-options="x.wt for x in weight" ng-change="myFunc(selectedWeight)">
+</select><span class="wt">Your Weight is {{selectedWeight.wt}}</span><br>
+Select your Gender:
+<span class="gn"><input type="radio" ng-model="gender" value="Male">Male
+<input type="radio" ng-model="gender" value="Female">Female
+<input type="radio" ng-model="gender" value="Others" >Others</span>
+<span class="wt">{{gender}}</span>
+<center><input type="button" ng-click="submit()" value="Submit"></button></center>
+</div>
+
+
+		
+ <script src="D:\Aparna\MainController.js"></script>
+
+
+<div id="Goal">You have to drink <input type="text" value="{{goal}}"> ml of water per day</div>
+<div id="Notify">Notify</div>
+
+
+</script>
+
+</form>
+</body>
+</html>
